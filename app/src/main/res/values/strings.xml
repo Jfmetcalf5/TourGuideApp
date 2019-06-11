@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+
+    <string name="category_bathroon">Bathroom</string>
+    <string name="category_bedroom">Bedroom</string>
+    <string name="category_kitchen">Kitchen/LivingRoom</string>
+    <string name="category_outside">Outside</string>
+
+    <string name="sqft_lbl">Square ft:</string>
+    <string name="details_lbl">Square ft:</string>
+
+    <string name="bath_sqrft">10</string>
+    <string name="bed_sqrft">70</string>
+    <string name="kitch_sqrft">72</string>
+    <string name="out_sqrft">2200</string>
+
+    <string name="bath_details">Sink, Toilet, Bath, Shower</string>
+    <string name="bed_details">Outlest, Walk-In Closet, Window</string>
+    <string name="kitch_details">Island, Dish-Washer, Pantry, Microwave, Cupboards</string>
+    <string name="out_details">Garage, Smart-Home, Separate Basement Entrance</string>
+</resources>
