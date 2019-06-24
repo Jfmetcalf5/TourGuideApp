@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
 
-    <string name="category_bathroon">Bathroom</string>
-    <string name="category_bedroom">Bedroom</string>
-    <string name="category_kitchen">Kitchen/LivingRoom</string>
-    <string name="category_outside">Outside</string>
+    <string name="category_rooms">Rooms</string>
+    <string name="category_lights">Lights</string>
+    <string name="category_doors">Doors</string>
+    <string name="category_appliances">Appliances</string>
 
     <string name="sqft_lbl">Square ft:</string>
     <string name="details_lbl">Square ft:</string>

@@ -10,16 +10,16 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class RoomAdapter extends ArrayAdapter<Room> {
+public class RoomAdapter extends ArrayAdapter<HouseItem> {
 
-    public RoomAdapter(Activity context, ArrayList<Room> rooms) {
-        super(this, 0, rooms);
+    public RoomAdapter(Activity context, ArrayList<HouseItem> houseItems) {
+        super(context, 0, houseItems);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        Room room = getItem(position);
+        HouseItem houseItem = getItem(position);
 
         View listItemView = convertView;
         if (listItemView == null) {
@@ -27,41 +27,11 @@ public class RoomAdapter extends ArrayAdapter<Room> {
         }
 
         TextView sqrftTextView = listItemView.findViewById(R.id.sqrft);
-        sqrftTextView.setText(room.getSft());
+        sqrftTextView.setText(houseItem.getDescription());
 
         TextView detailsTextView = listItemView.findViewById(R.id.details);
-        detailsTextView.setText(room.getDetails());
+        detailsTextView.setText(houseItem.getDetails());
 
-        ImageView imageView = listItemView.findViewById(R.id.image_view);
-        imageView.setImageResource(room.getImageId());
         return listItemView;
-
-//        return super.getView(position, convertView, parent);
     }
-
-    //        public RoomAdapter(Activity context, ArrayList<Room> rooms) {
-//            super(this, 0, rooms);
-//        }
-
-//        @NonNull
-//        @Override
-//        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//
-//            Word word = getItem(position);
-//
-//            View listItemView = convertView;
-//            if (listItemView == null) {
-//                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
-//            }
-//
-//            TextView defaultWord = listItemView.findViewById(R.id.english);
-//            defaultWord.setText(word.getDefaultTranslation());
-//
-//            TextView miwokWord = listItemView.findViewById(R.id.miwok);
-//            miwokWord.setText(word.getMiwokTranslation());
-//
-////        ImageView imageView = (ImageView) listItemView.findViewById(R.id.)
-////        imageView.setImageResource();
-//            return listItemView;
-//        }
 }
