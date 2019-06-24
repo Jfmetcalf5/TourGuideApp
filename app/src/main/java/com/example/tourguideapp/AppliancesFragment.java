@@ -29,23 +29,16 @@ public class AppliancesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         ArrayList<HouseItem> houseItems = new ArrayList<HouseItem>();
-        houseItems.add(new HouseItem("Fridge", "Black"));
-        houseItems.add(new HouseItem("Stove", "Stainless Steel"));
-        houseItems.add(new HouseItem("Microwave", "Stainless Steel"));
-        houseItems.add(new HouseItem("Washer/Dryer", "MayTag Brand"));
+        houseItems.add(new HouseItem(R.string.fridge, R.string.black));
+        houseItems.add(new HouseItem(R.string.stove, R.string.stainless));
+        houseItems.add(new HouseItem(R.string.microwave, R.string.stainless));
+        houseItems.add(new HouseItem(R.string.washerdryer, R.string.maytag));
 
         RoomAdapter adapter = new RoomAdapter(getActivity(), houseItems);
 
         ListView listView = rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-        });
 
         return rootView;
     }

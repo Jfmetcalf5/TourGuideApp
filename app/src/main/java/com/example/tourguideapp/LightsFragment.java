@@ -30,24 +30,17 @@ public class LightsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         ArrayList<HouseItem> houseItems = new ArrayList<HouseItem>();
-        houseItems.add(new HouseItem("Hanging", "Above kitchen table"));
-        houseItems.add(new HouseItem("In Ceiling", "Above kitchen sink"));
-        houseItems.add(new HouseItem("Dome", "Above living room"));
-        houseItems.add(new HouseItem("On Wall", "In bathroom"));
-        houseItems.add(new HouseItem("Hanging", "In doorway"));
+        houseItems.add(new HouseItem(R.string.hanging, R.string.aboveTable));
+        houseItems.add(new HouseItem(R.string.inCeiling, R.string.aboveKitchen));
+        houseItems.add(new HouseItem(R.string.dome, R.string.aboveLiving));
+        houseItems.add(new HouseItem(R.string.wall, R.string.inBathroom));
+        houseItems.add(new HouseItem(R.string.hanging, R.string.inDoorway));
 
         RoomAdapter adapter = new RoomAdapter(getActivity(), houseItems);
 
         ListView listView = rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-        });
 
         return rootView;
     }

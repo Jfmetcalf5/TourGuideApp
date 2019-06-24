@@ -5,6 +5,12 @@
     android:id="@+id/listLayout"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="135dp"
+        android:layout_height="126dp"
+        android:padding="20dp" />
+
     <LinearLayout
         android:id="@+id/linear_layout"
         android:paddingLeft="16dp"

@@ -1,6 +1,41 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
 
+    <string name="fridge">Fridge</string>
+    <string name="black">Black</string>
+    <string name="stove">Stove</string>
+    <string name="stainless">Stainless Steel</string>
+    <string name="microwave">Microwave</string>
+    <string name="washerdryer">Washer/Dryer</string>
+    <string name="maytag">MayTag Brand</string>
+
+    <string name="frontIn">Front In</string>
+    <string name="white">White</string>
+    <string name="frontOut">Front Out</string>
+    <string name="garage">Garage</string>
+    <string name="car2">2-Car</string>
+    <string name="screenIn">Screen In</string>
+    <string name="screenOut">Screen Out</string>
+    <string name="redCurtains">Red Curtains</string>
+    <string name="balcony">Balcony</string>
+    <string name="hanging">Hanging</string>
+    <string name="wall">Wall Mount</string>
+    <string name="dome">"Dome"</string>
+    <string name="inCeiling">"In Ceiling"</string>
+    <string name="inDoorway">"In doorway"</string>
+    <string name="inBathroom">In bathroom"</string>
+    <string name="aboveLiving">"Above living room"</string>
+    <string name="aboveKitchen">Above kitchen sink</string>
+    <string name="aboveTable">Above table</string>
+    <string name="bedroom">Bedroom</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="outside">Outside</string>
+    <string name="s150">150 square ft</string>
+    <string name="s1500">1500 square ft</string>
+    <string name="s8">8 square ft</string>
+    <string name="s120">120 square ft</string>
+
     <string name="category_rooms">Rooms</string>
     <string name="category_lights">Lights</string>
     <string name="category_doors">Doors</string>

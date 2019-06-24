@@ -30,24 +30,17 @@ public class DoorsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         ArrayList<HouseItem> houseItems = new ArrayList<HouseItem>();
-        houseItems.add(new HouseItem("Front In", "White"));
-        houseItems.add(new HouseItem("Front Out", "White"));
-        houseItems.add(new HouseItem("Garage", "2-Car"));
-        houseItems.add(new HouseItem("Screen In", "Red Curtains"));
-        houseItems.add(new HouseItem("Screen Out", "Balcony"));
+        houseItems.add(new HouseItem(R.string.frontIn, R.string.white));
+        houseItems.add(new HouseItem(R.string.frontOut, R.string.white));
+        houseItems.add(new HouseItem(R.string.garage, R.string.car2));
+        houseItems.add(new HouseItem(R.string.screenIn, R.string.redCurtains));
+        houseItems.add(new HouseItem(R.string.screenOut, R.string.balcony));
 
         RoomAdapter adapter = new RoomAdapter(getActivity(), houseItems);
 
         ListView listView = rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-        });
 
         return rootView;
     }

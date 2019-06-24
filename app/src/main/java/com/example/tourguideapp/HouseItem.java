@@ -1,19 +1,27 @@
 package com.example.tourguideapp;
 
-import android.media.Image;
-
 public class HouseItem {
 
-    private String mdescription;
-    private String mdetails;
+    private int mdescription;
+    private int mdetails;
+    private int mImage;
 
-    public HouseItem(String description, String details) {
+    public HouseItem(int description, int details) {
         mdescription = description;
         mdetails = details;
     }
 
-    public String getDescription() { return mdescription; }
-    public String getDetails() {
+    public HouseItem(int description, int details, int image) {
+        mdescription = description;
+        mdetails = details;
+        mImage = image;
+    }
+
+    public int getDescription() { return mdescription; }
+    public int getDetails() {
         return mdetails;
+    }
+    public int getImage() {
+        return mImage;
     }
 }

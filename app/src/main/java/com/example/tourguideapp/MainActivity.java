@@ -19,7 +19,5 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        final ImageView imageView = findViewById(R.id.image_view);
-        imageView.setImageResource(R.drawable.outside);
     }
 }

@@ -1,6 +1,7 @@
 package com.example.tourguideapp;
 
 import android.app.Activity;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,12 @@ public class RoomAdapter extends ArrayAdapter<HouseItem> {
 
         TextView detailsTextView = listItemView.findViewById(R.id.details);
         detailsTextView.setText(houseItem.getDetails());
+
+        ImageView imageView = listItemView.findViewById(R.id.image_view);
+
+        if (houseItem.getDescription() == R.string.outside) {
+            imageView.setImageResource(houseItem.getImage());
+        }
 
         return listItemView;
     }

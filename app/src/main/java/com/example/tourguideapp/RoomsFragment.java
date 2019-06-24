@@ -30,23 +30,16 @@ public class RoomsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         ArrayList<HouseItem> houseItems = new ArrayList<HouseItem>();
-        houseItems.add(new HouseItem("Bedroom", "120 square ft"));
-        houseItems.add(new HouseItem("Bathroom", "8 square ft"));
-        houseItems.add(new HouseItem("Outside", "1500 square ft"));
-        houseItems.add(new HouseItem("Kitchen", "150 square ft"));
+        houseItems.add(new HouseItem(R.string.bedroom, R.string.s120));
+        houseItems.add(new HouseItem(R.string.bathroom, R.string.s8));
+        houseItems.add(new HouseItem(R.string.outside, R.string.s1500, R.drawable.outside));
+        houseItems.add(new HouseItem(R.string.kitchen, R.string.s150));
 
         RoomAdapter adapter = new RoomAdapter(getActivity(), houseItems);
 
         ListView listView = rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-        });
 
         return rootView;
     }
