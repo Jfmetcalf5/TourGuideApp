@@ -35,7 +35,7 @@ public class RoomAdapter extends ArrayAdapter<HouseItem> {
 
         ImageView imageView = listItemView.findViewById(R.id.image_view);
 
-        if (houseItem.getDescription() == R.string.outside) {
+        if (houseItem.getDescription() != 0) {
             imageView.setImageResource(houseItem.getImage());
         }
 
